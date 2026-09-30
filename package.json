@@ -1,0 +1,17 @@
+{
+  "name": "zoned-event-normalizer",
+  "version": "0.1.0",
+  "description": "Converts a local time with a timezone identifier into the correct UTC epoch milliseconds, handling ambiguous and non-existent times during DST transitions.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
