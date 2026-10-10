@@ -43,3 +43,10 @@ If you need to reject gaps instead, check `outcome` and throw.
 
 For fall-back ambiguity, we always pick the earlier occurrence. There is no
 option to pick the later one; wrap the call if you need that policy.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
